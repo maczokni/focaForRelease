@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/howlongago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="How many hours ago did the event you are reporting happen?" />
+
+    <EditText
+        android:id="@+id/edithours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/howlongago"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:inputType="number" >
+        
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edithours"
+        android:layout_alignRight="@+id/edithours"
+        android:layout_below="@+id/howlongago"
+        android:textSize="18sp"
+        android:text="Hours" />
+    
+    <TextView
+        android:id="@+id/isWorriedTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/hours"
+        android:text="At the time of the event you are reporting, how worried were you about becoming a victim of crime?"
+        android:textSize="18sp" />
+
+    
+    <RadioGroup
+        android:id="@+id/isWorried2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isWorriedTxt" >
+   
+    
+    	<RadioButton
+        android:id="@+id/radio0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Not at all worried" />
+
+    	<RadioButton
+        android:id="@+id/radio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not very worried" />
+
+    	<RadioButton
+        android:id="@+id/radio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fairly worried" />
+
+   		<RadioButton
+        android:id="@+id/radio3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Very worried" />
+    
+     </RadioGroup>
+     
+    <TextView
+        android:id="@+id/isTransportText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/isWorried2"
+        android:text="Were you on a form of public transport? (e.g. on the bus / train)"
+        android:textSize="18sp" />
+     
+    <RadioGroup
+        android:id="@+id/isTransport"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isTransportText" >
+   
+    
+    	<RadioButton
+        android:id="@+id/radio0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="No" />
+
+    	<RadioButton
+        android:id="@+id/radio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes" />
+    
+     </RadioGroup>
+     
+   
+    <RelativeLayout 
+        android:id="@+id/InnerRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+    <Button
+        android:id="@+id/saveButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Save"
+        android:layout_margin="10dp"  />
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Back"
+        android:layout_margin="10dp"  />
+
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Foca" >
+
+    <LinearLayout
+        android:id="@+id/MainMenu"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/gpsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="18dp"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Button
+            android:id="@+id/questionnaireButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Complete Questionnaire"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/reportButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Report Something Now"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/bluetoothButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Report a Previous Incident"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#080808" />
+
+        <Button
+            android:id="@+id/helpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How To Use FOCA"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="0.77"
+            android:text="Please remember that this application is for information gathering purposes only. Call 999 if you are reporting a crime in progress or if someone is in immediate danger."
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</RelativeLayout>

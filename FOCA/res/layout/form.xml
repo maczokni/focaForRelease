@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/formText"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:text="@string/welcome"
+        android:textSize="20sp"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:id="@+id/OKButton"
+        android:layout_below="@+id/formText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Do it later" />
+
+    <Button
+        android:id="@+id/NOWButton"
+        android:layout_below="@+id/formText"
+        android:layout_toRightOf="@+id/OKButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Do it now" />
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+     <TextView
+        android:id="@+id/isPCSector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The following questions will ask you to identify areas you are familiar with. To avoid getting too much detail about you, we will ask you only to provide the first part of your post code. E.g. if your postcode is N7 7QP, just tell us N7. "
+        android:textSize="14sp"
+        android:layout_margin="10dp" />
+    
+    <TextView
+        android:id="@+id/isHomePCText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isPCSector"
+        android:text="What is the first part of your home post code?"
+        android:textSize="18sp"
+        android:layout_margin="10dp" />
+
+
+    <EditText
+        android:id="@+id/isHomePC"
+        android:layout_below="@+id/isHomePCText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:layout_margin="10dp"/>
+    
+     <TextView
+        android:id="@+id/isWorkPCText"
+        android:layout_below="@+id/isHomePC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is the first part of your work post code?"
+        android:textSize="18sp"
+        android:layout_margin="10dp" />
+     
+     <TextView
+        android:id="@+id/isWorkPCText2"
+        android:layout_below="@+id/isWorkPCText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If not applicable please write 'none'"
+        android:textSize="10sp"
+        />
+
+    <EditText
+        android:id="@+id/isWorkPC"
+        android:layout_below="@+id/isWorkPCText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:layout_margin="10dp"/>
+    
+
+    <Button
+       android:id="@+id/preq4next"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:layout_below="@+id/isWorkPC"
+       android:text="Next > " 
+       android:layout_margin="10dp"/>
+    
+   <Button
+        android:id="@+id/backButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/isWorkPC"
+        android:text="Back"
+        android:layout_margin="10dp"  />
+
+    <TextView
+        android:id="@+id/pageNoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Page 4/5"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

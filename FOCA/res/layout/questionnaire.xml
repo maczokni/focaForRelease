@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/isWorriedTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="In this moment, how worried are you about becoming a victim of crime?"
+        android:textSize="18sp" />
+
+    
+    <RadioGroup
+        android:id="@+id/isWorried"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isWorriedTxt" >
+   
+    
+    	<RadioButton
+        android:id="@+id/radio0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Not at all worried" />
+
+    	<RadioButton
+        android:id="@+id/radio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not very worried" />
+
+    	<RadioButton
+        android:id="@+id/radio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fairly worried" />
+
+   		<RadioButton
+        android:id="@+id/radio3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Very worried" />
+    
+     </RadioGroup>
+     
+    <TextView
+        android:id="@+id/isTransportText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/isWorried"
+        android:text="Are you on a form of public transport? (e.g. on the bus / train)"
+        android:textSize="18sp" />
+     
+    <RadioGroup
+        android:id="@+id/isTransport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isTransportText" >
+   
+    
+    	<RadioButton
+        android:id="@+id/radio0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="No" />
+
+    	<RadioButton
+        android:id="@+id/radio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes" />
+    
+     </RadioGroup>
+     
+    
+
+
+    <Button
+        android:id="@+id/saveButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isTransport"
+        android:layout_marginBottom="76dp"
+        android:text="Save" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/saveButton2"
+        android:layout_marginTop="58dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

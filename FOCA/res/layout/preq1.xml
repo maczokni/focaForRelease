@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The following questions will ask some basic demographic information to inform our research. All information is anonymous and confidential and will not be used to identify you personally."
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/isGenderText"
+        android:layout_below="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is your gender?"
+        android:textSize="18sp"
+        android:layout_margin="10dp" />
+
+    <Spinner
+        android:id="@+id/isGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/isGenderText" />
+
+    <TextView
+        android:id="@+id/isAgeText"
+        android:layout_below="@+id/isGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is your age?"
+        android:textSize="18sp"
+        android:layout_margin="10dp" />
+
+    <EditText
+        android:id="@+id/isAge"
+        android:layout_below="@+id/isAgeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:layout_margin="10dp"/>
+
+    <Button
+       android:id="@+id/preq1next"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:layout_below="@+id/isAge"
+       android:text="Next > " 
+       android:layout_margin="10dp"/>
+   
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/isAge"
+        android:text="Back"
+        android:layout_margin="10dp"  />
+    
+    <TextView
+        android:id="@+id/pageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Page 1/5"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

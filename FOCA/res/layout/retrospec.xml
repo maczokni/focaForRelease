@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+     
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:text="Touch the map on the location you wish to send a report about to select the area. Please be as precise as possible. When you have done so please press OK to proceed" />
+
+     <TextView
+         android:id="@+id/lattextview"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/textView1"
+         android:text="Latitude" />
+
+     
+
+     <TextView
+         android:id="@+id/textViewLatitude"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/textView1"
+          android:layout_alignParentRight="true"
+         android:layout_alignRight="@+id/lattextview"
+         android:ems="10" />
+
+     <TextView
+         android:id="@+id/lngtextview"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/lattextview"
+         android:text="Longitude" />
+
+     <TextView
+         android:id="@+id/textViewLongitude"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_below="@+id/textViewLatitude"
+         android:layout_alignRight="@+id/lngtextview"
+         android:layout_alignParentRight="true"
+         android:ems="10" >
+         
+
+         <requestFocus />
+     </TextView>
+
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/lngtextview"
+         android:layout_marginTop="17dp"
+         android:text="OK" />
+     
+     <fragment 
+       android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_below="@+id/button1"
+  		/>
+
+</RelativeLayout>

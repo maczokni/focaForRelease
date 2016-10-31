@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="There are 3 ways to send reports:"
+        android:layout_margin="11dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1) The app will send little notifications to ask how safe you are feeling at the time. Respond whenever convenient using the “Complete Questionnaire” option"
+        android:layout_below="@+id/textView1"
+        android:layout_margin="11dp"
+        android:autoLink="web"
+    android:linksClickable="true"
+         />
+    <TextView
+        android:id="@+id/textView2b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2) If you experience something you’d like to report unprompted, use the “Report something now” option."
+        android:layout_below="@+id/textView2a"
+        android:layout_margin="11dp"
+        android:autoLink="web"
+    android:linksClickable="true"
+         />
+    <TextView
+        android:id="@+id/textView2c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3) If you are in a dangerous place, get to safety first, and report later, using “Report a Previous Incident” option"
+        android:layout_below="@+id/textView2b"
+        android:layout_margin="11dp"
+        android:autoLink="web"
+    android:linksClickable="true"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="If you have any questions please contact Reka Solymosi at r.solymosi.11@ucl.ac.uk"
+        android:layout_below="@+id/textView2c"
+         />
+
+    
+
+    <Button
+        android:id="@+id/helpOKButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView3"
+        
+        android:text="OK" />
+
+</RelativeLayout>

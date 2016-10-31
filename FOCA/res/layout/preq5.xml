@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+     <TextView
+        android:id="@+id/isPreVicText"
+        android:layout_below="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="During the last 12 months have you PERSONALLY (not others in your household) been a victim of crime? Please include anything that happened to you at home, in the street, at work, in a shop, in a park, on a train or anywhere else."
+        android:textSize="18sp"
+        android:layout_margin="10dp" />
+
+    <RadioGroup
+        android:id="@+id/isPreVic"
+        android:layout_below="@+id/isPreVicText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textSize="16sp"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="No" />
+    </RadioGroup>
+    
+
+    <Button
+       android:id="@+id/preq5fin"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:layout_below="@+id/isPreVic"
+       android:text="Finish" 
+       android:layout_margin="10dp"/>
+    
+    
+   <Button
+        android:id="@+id/backButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/isPreVic"
+        android:text="Back"
+        android:layout_margin="10dp"  />
+
+    <TextView
+        android:id="@+id/pageNoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Page 5/5"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

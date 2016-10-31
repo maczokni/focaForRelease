@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FOCA</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_about">About</string>
+
+    <string name="welcome"> Welcome! Before you begin using FOCA, we would like to ask a few questions about you, to use in our research. All response is anonymous and confidential, and stored securely. We would really appreciate if you could take the time to do this at your nearest convenience. Thank you!</string>
+
+   <string-array name="gender_array">
+       <item>Male</item>
+       <item >Female</item>
+       <item>Trans</item>
+       <item >Other</item>
+   </string-array>
+   <string-array name="sexuality_array">
+       <item>Heterosexual or straight</item>
+       <item >Gay</item>
+       <item>Lesbian</item>
+       <item >Bisexual</item>
+       <item>Queer</item>
+       <item>Other</item>
+   </string-array>
+   <string-array name="yesno_array">
+       <item>Yes</item>
+       <item >No</item>
+       <item>Not Sure</item>
+   </string-array>
+   <string-array name = "hatecrime_array">
+       <item>No</item>
+       <item>Yes targeting race</item>
+       <item>Yes targeting ethnicity</item>
+       <item>Yes, homophobic</item>
+       <item>Yes, transphobic</item>
+       <item>Yes targeting disability</item>
+       <item>Yes, other</item>
+   </string-array>
+   
+    <string-array name="ethnicity_array">
+        <item>White British</item>
+        <item>White Irish</item>
+        <item>Any other white background</item>
+        <item>Mixed White and Black Caribbean</item>
+        <item>Mixed White and Black African</item>
+        <item>Mixed White and Asian</item>
+        <item>Any other mixed background</item>
+        <item>Indian</item>
+        <item>Pakistani</item>
+        <item>Bangladeshi</item>
+        <item>Any other Asian background</item>
+        <item>Caribbean</item>
+        <item>African</item>
+        <item>Any other black background</item>
+        <item>Chinese</item>
+        <item>Any other ehtnic group</item>
+        <item>Prefer not to say</item>
+        </string-array>
+        
+    <string-array name="crimetype_array">
+        <item>Being mugged or robbed</item>
+        <item>Being raped</item>
+        <item>Being physically attacked by a stranger</item>
+        <item>Being insulted or pestered by anybody</item>
+        <item>Being subjected to a physical attack because of your skin colour/ ethnic origin</item>
+        <item>Teenagers hanging around</item>
+        <item>Rubbish or litter lying around</item>
+        <item>Vangalism, graffiti and other deliberate damage</item>
+        <item>People using or dealing drugs</item>
+        <item>People being drunk or rowdy</item>
+        <item>Abandoned or burnt out cars</item>
+        <item>Being harassed or intimidated</item>
+        <item>Speeding traffic</item>
+        <item>Other</item>
+        </string-array>
+    
+</resources>

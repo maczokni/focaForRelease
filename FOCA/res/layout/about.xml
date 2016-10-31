@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fear Of Crime App info"
+        android:layout_margin="18dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This app is part of a University College London Research Project interested in people's everyday experiences with fear of crime. To find out more visit www.tinyurl.com/focaUCL and see Description"
+        android:layout_below="@+id/textView1"
+        android:layout_margin="18dp"
+        android:autoLink="web"
+    android:linksClickable="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:text="If you have any questions please contact Reka Solymosi at r.solymosi.11@ucl.ac.uk"
+        android:layout_below="@+id/textView2"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_height="wrap_content"
+        android:text="FOCA version number: " />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView4"
+        
+        android:text="OK" />
+
+</RelativeLayout>
